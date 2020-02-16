@@ -1,0 +1,54 @@
+﻿name = ModActionsList
+assemblyname = TWR1
+pmname = TWR1Data
+modname = Vertical Vel.
+ACTION
+{
+	name = Velocity
+	TYPE
+	{
+		ident = 1
+		name = Vel. Off
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 2
+		name = Vel. Set:
+		data = 0 
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 4
+		name = Vel. Change:
+		data = 0 
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Height
+	TYPE
+	{
+		ident = 5
+		name = Height Off
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 6
+		name = Height Set:
+		data = 0 
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 7
+		name = Height Change:
+		data = 0 
+		ActionData = float
+	}
+}

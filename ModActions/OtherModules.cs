@@ -84,7 +84,7 @@ namespace ModActions
                 SetCrossfeedValue();
             }
         }
-        public void OnLoad(ConfigNode node)
+        new public void OnLoad(ConfigNode node)
         {
             if (!setupRun)
             {
@@ -95,7 +95,7 @@ namespace ModActions
                 SetCrossfeedValue();
             }
         }
-        public void Load(ConfigNode node)
+        new public void Load(ConfigNode node)
         {
             if (!setupRun)
             {
@@ -106,7 +106,7 @@ namespace ModActions
                 SetCrossfeedValue();
             }
         }
-        public void OnInitialize()
+        new public void OnInitialize()
         {
             if (!setupRun)
             {
@@ -235,7 +235,7 @@ namespace ModActions
                 SetResourceFlow();
             }
         }
-        public void OnLoad(ConfigNode node)
+        new public void OnLoad(ConfigNode node)
         {
             if (!setupRun)
             {
@@ -246,7 +246,7 @@ namespace ModActions
                 SetResourceFlow();
             }
         }
-        public void Load(ConfigNode node)
+        new public void Load(ConfigNode node)
         {
             if (!setupRun)
             {

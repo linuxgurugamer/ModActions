@@ -1,0 +1,79 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleControlSurface
+modname = Ctrl. Surf.
+ACTION
+{
+	name = Pitch
+	TYPE
+	{
+		ident = 25
+		name = P. On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 26
+		name = P. Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 27
+		name = P. Toggle
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Yaw
+	TYPE
+	{
+		ident = 28
+		name = Y On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 29
+		name = Y Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 30
+		name = Y Toggle
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Roll
+	TYPE
+	{
+		ident = 31
+		name = R On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 32
+		name = R Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 33
+		name = R Toggle
+		data = 0 
+		ActionData = no
+	}
+}

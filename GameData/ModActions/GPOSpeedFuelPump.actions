@@ -1,0 +1,72 @@
+﻿name = ModActionsList
+assemblyname = GPOSpeedFuelPump
+pmname = GPOSpeedPump
+modname = GPO Pump
+ACTION
+{
+	name = Pumping
+	TYPE
+	{
+		ident = 44
+		name = Pump On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 45
+		name = Pump Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 46
+		name = Pump Toggle
+		data = - 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Balance
+	TYPE
+	{
+		ident = 47
+		name = Bal. On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 48
+		name = Bal. Off
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 49
+		name = Bal. Toggle
+		data = - 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Level
+	TYPE
+	{
+		ident = 50
+		name = Set:
+		data = 1
+		ActionData = int
+	}
+	TYPE
+	{
+		ident = 51
+		name = Change:
+		data = 1 
+		ActionData = int
+	}
+}

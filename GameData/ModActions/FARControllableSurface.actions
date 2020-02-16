@@ -1,0 +1,58 @@
+﻿name = ModActionsList
+assemblyname = FerramAerospaceResearch
+pmname = FARControllableSurface
+modname = FAR Wing
+ACTION
+{
+	name = Pitch
+	TYPE
+	{
+		ident = 34
+		name = Set:
+		data = 0
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 35
+		name = Change:
+		data = 0 
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Yaw
+	TYPE
+	{
+		ident = 36
+		name = Set:
+		data = 0
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 37
+		name = Change:
+		data = 0 
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Roll
+	TYPE
+	{
+		ident = 38
+		name = Set:
+		data = 0
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 39
+		name = Change:
+		data = 0 
+		ActionData = float
+	}
+}

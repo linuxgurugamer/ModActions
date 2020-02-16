@@ -1,0 +1,100 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleWheelMotor
+modname = Wheel Motor
+ACTION
+{
+	name = Traction Control
+	TYPE
+	{
+		ident = 71
+		name = T.C On
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 72
+		name = T.C. Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 73
+		name = T.C. Set(0-5)
+		data = 1	 
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 74
+		name = T.C. Change(0-5)
+		data = 0 
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Motor
+	TYPE
+	{
+		ident = 75
+		name = Motor Enable
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 76
+		name = Motor Disable
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 77
+		name = Motor Toggle
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 78
+		name = Motor Set%
+		data = 100 
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 79
+		name = Motor Change%
+		data = 0 
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Motor Direction
+	TYPE
+	{
+		ident = 80
+		name = Motor Normal
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 81
+		name = Motor Reversed
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 82
+		name = Motor Dir Toggle
+		data = 0 
+		ActionData = no
+	}
+}

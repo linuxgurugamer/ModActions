@@ -1,0 +1,15 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleEngines
+modname = Stock Engines
+ACTION
+{
+	name = Thrust Limit
+	TYPE
+	{
+		ident = 3
+		name = Limit%:
+		data = 0 
+		ActionData = float
+	}
+}

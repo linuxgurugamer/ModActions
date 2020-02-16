@@ -5,6 +5,10 @@ using System.Text;
 using UnityEngine;
 using System.Reflection;
 
+using KSP.UI;
+using ClickThroughFix;
+using ToolbarControl_NS;
+
 namespace ModActions
 {
     class MainGUIWindow//DO NOT INHERIT ANYTHING, BREAKS THIS CLASS FOR REASONS UNKNOWN, think it gets garbage collected too soon?
@@ -49,10 +53,19 @@ namespace ModActions
             actionGroupNames = new List<string>();
             partLoc = new Texture2D(21, 21);
             //partLoc = GameDatabase.Instance.databaseTexture.Find(tx => tx.name == "PartLocCircle").texture;
-            partLoc = GameDatabase.Instance.GetTexture("Diazo/ModActions/PartLocCircle", false);
-            buttonGray = GameDatabase.Instance.GetTexture("Diazo/ModActions/ButtonTexture", false);
-            buttonRed = GameDatabase.Instance.GetTexture("Diazo/ModActions/ButtonTextureRed", false);
-            buttonGreen = GameDatabase.Instance.GetTexture("Diazo/ModActions/ButtonTextureGreen", false);
+
+#if false
+            partLoc = GameDatabase.Instance.GetTexture("ModActions/PartLocCircle", false);
+            buttonGray = GameDatabase.Instance.GetTexture("ModActions/ButtonTexture", false);
+            buttonRed = GameDatabase.Instance.GetTexture("ModActions/ButtonTextureRed", false);
+            buttonGreen = GameDatabase.Instance.GetTexture("ModActions/ButtonTextureGreen", false);
+#endif
+
+            ToolbarControl.LoadImageFromFile(ref partLoc, "ModActions/PluginData/PartLocCircle");
+            ToolbarControl.LoadImageFromFile(ref buttonGray, "ModActions/PluginData/ButtonTexture");
+            ToolbarControl.LoadImageFromFile(ref buttonRed, "ModActions/PluginData/ButtonTextureRed");
+            ToolbarControl.LoadImageFromFile(ref buttonGreen, "ModActions/PluginData/ButtonTextureGreen");
+
             thisSkin = (GUISkin)MonoBehaviour.Instantiate(HighLogic.Skin);
             thisSkin.font = Resources.GetBuiltinResource(typeof(Font), "Arial.ttf") as Font;
             thisSkin.label.fontStyle = FontStyle.Normal;
@@ -107,7 +120,7 @@ namespace ModActions
                 if (drawWin && showKSPui)
                 {
                     errLine = "3";
-                    MainWindowRect = GUI.Window(67346779, MainWindowRect, DrawMainWindow, ""); //our main window
+                    MainWindowRect =ClickThruBlocker.GUIWindow(67346779, MainWindowRect, DrawMainWindow, ""); //our main window
                     errLine = "4";
                     List<Vector3> partScreenPos = new List<Vector3>();
                     errLine = "5";
@@ -699,7 +712,8 @@ namespace ModActions
                 if (HighLogic.LoadedSceneIsEditor)
                 {
                     errLine = "7";
-                    KSP.UI.Screens.EditorActionGroups.Instance.SelectGroup(); //used to refresh stock editor, find new ksp 1.1 method
+                    //KSP.UI.Screens.EditorActionGroups.Instance.SelectGroup(); //used to refresh stock editor, find new ksp 1.1 method
+                    typeof(KSP.UI.Screens.EditorActionGroups).GetMethod("SelectGroup", BindingFlags.NonPublic | BindingFlags.Instance).Invoke(KSP.UI.Screens.EditorActionGroups.Instance, null);
                     try
                     {
                         StaticMethodsUnity.RefreshAGXEditor(); 

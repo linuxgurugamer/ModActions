@@ -1,0 +1,22 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleWheelDeployment
+modname = Stock Wheel
+ACTION
+{
+	name = Landing Legs/Gear
+	TYPE
+	{
+		ident = 69
+		name = Gear Deploy
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 70
+		name = Gear Retract
+		data = 0 
+		ActionData = no
+	}
+}

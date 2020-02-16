@@ -1,0 +1,55 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleWheelMotorSteering
+modname = Differential Steering
+ACTION
+{
+	name = On/Off
+	TYPE
+	{
+		ident = 83
+		name = Diff Steer Enable
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 84
+		name = Diff Steer Disable
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 85
+		name = Diff Steer Toggle
+		data = 0
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Direction
+	TYPE
+	{
+		ident = 86
+		name = Diff Steer Dir Normal
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 87
+		name = Diff Steer Dir Inverted
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 88
+		name = Diff Steer Dir Toggle
+		data = 0
+		ActionData = no
+	}
+
+}

@@ -1,0 +1,55 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleWheelSteering
+modname = Wheel Steering
+ACTION
+{
+	name = On/Off
+	TYPE
+	{
+		ident = 89
+		name = Steer Enable
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 90
+		name = Steer Disable
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 91
+		name = Steer Toggle
+		data = 0
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Direction
+	TYPE
+	{
+		ident = 92
+		name = Steer Dir Normal
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 93
+		name = Steer Dir Inverted
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 94
+		name = Steer Dir Toggle
+		data = 0
+		ActionData = no
+	}
+
+}

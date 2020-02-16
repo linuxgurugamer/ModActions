@@ -1,0 +1,70 @@
+Changelog
+
+1.7.0
+	Adoption by LinuxGuruGamer
+	Added support for ToolbarController
+	Added support for ClickThroughFix
+	Removed Blizzy & stock toolbar code
+	Replaced call to:
+			KSP.UI.Screens.EditorActionGroups.Instance.SelectGroup();
+		with reflection call because method was made private:
+            typeof(KSP.UI.Screens.EditorActionGroups).GetMethod("SelectGroup", BindingFlags.NonPublic | BindingFlags.Instance).Invoke(KSP.UI.Screens.EditorActionGroups.Instance, null);
+	Moved mod folder to GameData (out of Diazo)
+	Moved all textures to PluginData & changed loading to use ToolbarControl.LoadImageFromFile
+	Added .version file
+	Added Changelog, added details from all releases
+	Moved following classes into their own files:
+		ModActionsFlight
+		ModActionsEditor
+		ModActionsMainMenu
+		ModActionData
+		
+
+1.6
+	KSP 1.3 compatibility update.
+
+1.5
+	Add Wheel Steering actions and Friction Control actions
+
+1.4b
+	Add support for Saturable Reaction Wheels dumping momentum via monoProp consumption.
+
+1.4a
+	Add AutoStrut support
+	Auto-Hide button in flight mode if AGX not installed.
+
+1.3a
+	blizzy78/ksp_toolbar#39
+	No changes to my code, apply fix as per above link.
+
+1.2a
+	KSP 1.1.2 update.
+	Fix ModuleWheelBrake actions.
+	Show/Hide window in flight mode on F2 now.
+
+1.2
+	KSP 1.1 Update
+	Fix settings file so it doesn't void ModuleManager cache
+	Add new wheels system actions
+
+1.1a
+	Various bugfixes
+	GPOPump for new maintainer.
+
+1.0
+	Official Release
+
+0.5
+	Add ActionsEverywhere mods and Vertical Velocity.
+	Is a release candidate if no more issues reported.
+
+0.3
+	Fix GUI so it doesn't break when no actions loaded.
+	Fix actions loading method (hopefully)
+
+0.2
+	Fix a bunch of bugs, mod should now work as advertised, still only has the Engines Thrust Limit action.
+
+0.1
+	Initial release.
+	Only supports one action to change the Thrust Limiter on engines so far.

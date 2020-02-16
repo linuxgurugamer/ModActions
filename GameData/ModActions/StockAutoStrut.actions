@@ -1,0 +1,43 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = All
+modname = Stock Strut
+ACTION
+{
+	name = Auto Strut
+	TYPE
+	{
+		ident = 115
+		name = Toggle
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 116
+		name = Off
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 117
+		name = Heaviest
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 118
+		name = Root
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 119
+		name = Grandparent
+		data = -
+		ActionData = no
+	}
+}

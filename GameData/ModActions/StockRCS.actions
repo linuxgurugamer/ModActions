@@ -1,0 +1,151 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleRCS
+modname = RCS Thrusters
+ACTION
+{
+	name = Thrust Limit
+	TYPE
+	{
+		ident = 95
+		name = Set %:
+		data = 0 
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 96
+		name = Change %:
+		data = 0 
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Thrust Toggles
+	TYPE
+	{
+		ident = 97
+		name = Enable Roll
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 98
+		name = Disable Roll
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 99
+		name = Toggle Roll
+		data = - 
+		ActionData = no
+	}	
+	TYPE
+	{
+		ident = 100
+		name = Enable Pitch
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 101
+		name = Disable Pitch
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 102
+		name = Toggle Pitch
+		data = - 
+		ActionData = no
+	}	
+	TYPE
+	{
+		ident = 103
+		name = Enable Yaw
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 104
+		name = Disable Yaw
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 105
+		name = Toggle Yaw
+		data = - 
+		ActionData = no
+	}	
+	TYPE
+	{
+		ident = 106
+		name = Enable X
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 107
+		name = Disable X
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 108
+		name = Toggle X
+		data = - 
+		ActionData = no
+	}	
+	TYPE
+	{
+		ident = 109
+		name = Enable Y
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 110
+		name = Disable Y
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 111
+		name = Toggle Y
+		data = - 
+		ActionData = no
+	}	
+	TYPE
+	{
+		ident = 112
+		name = Enable Z
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 113
+		name = Disable Z
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 114
+		name = Toggle Z
+		data = - 
+		ActionData = no
+	}

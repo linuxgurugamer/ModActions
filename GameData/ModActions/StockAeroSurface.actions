@@ -1,0 +1,79 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleAeroSurface
+modname = Aero Surf.
+ACTION
+{
+	name = Pitch
+	TYPE
+	{
+		ident = 25
+		name = On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 26
+		name = Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 27
+		name = Toggle
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Yaw
+	TYPE
+	{
+		ident = 28
+		name = On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 29
+		name = Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 30
+		name = Toggle
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Roll
+	TYPE
+	{
+		ident = 31
+		name = On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 32
+		name = Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 33
+		name = Toggle
+		data = 0 
+		ActionData = no
+	}
+}

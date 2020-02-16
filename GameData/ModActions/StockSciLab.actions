@@ -1,0 +1,15 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleScienceLab
+modname = Stock SciLab
+ACTION
+{
+	name = Clean Lab
+	TYPE
+	{
+		ident = 43
+		name = Clean Lab
+		data = -
+		ActionData = no
+	}
+}

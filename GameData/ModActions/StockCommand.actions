@@ -1,0 +1,139 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleCommand
+modname = Command
+ACTION
+{
+	name = Control Here
+	TYPE
+	{
+		ident = 8
+		name = Ctrl Here
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = RCS
+	TYPE
+	{
+		ident = 9
+		name = On
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 10
+		name = Off
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 11
+		name = Toggle
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = SAS
+	TYPE
+	{
+		ident = 12
+		name = _Off
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 13
+		name = Steady
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 14
+		name = Pro+
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 15
+		name = Pro-
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 16
+		name = Norm+
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 17
+		name = Norm-
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 18
+		name = Rad+
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 19
+		name = Rad-
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 20
+		name = Maneuver
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 21
+		name = Target+
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 22
+		name = Target-
+		data = 0 
+		ActionData = no
+	}
+}
+ACTION
+{
+	name = Throttle
+	TYPE
+	{
+		ident = 23
+		name = Set:
+		data = 0
+		ActionData = float
+	}
+        TYPE
+	{
+		ident = 24
+		name = Change:
+		data = 0
+		ActionData = float
+	}
+}

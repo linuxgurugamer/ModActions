@@ -1,0 +1,68 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleWheelBrakes
+modname = Stock Wheel
+ACTION
+{
+	name = Brakes Group
+	TYPE
+	{
+		ident = 61
+		name = Add Brakes
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 62
+		name = Remove Brakes
+		data = 0 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 63
+		name = Toggle Brakes Group
+		data = 100
+		ActionData = float
+	}
+}
+ACTION
+{
+	name = Brake Control
+	TYPE
+	{
+		ident = 64
+		name = Brakes On
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 65
+		name = Brakes Off
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 66
+		name = Toggle Brakes
+		data = 0
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 67
+		name = Set Brake%
+		data = 100
+		ActionData = float
+	}
+	TYPE
+	{
+		ident = 68
+		name = Change Brake%
+		data = 0
+		ActionData = float
+	}
+}

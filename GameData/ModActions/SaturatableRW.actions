@@ -1,0 +1,29 @@
+﻿name = ModActionsList
+assemblyname = SaturatableRW
+pmname = RWSaturatable
+modname = Saturable RW
+ACTION
+{
+	name = Fuel Cancel
+	TYPE
+	{
+		ident = 120
+		name = Enable
+		data = -
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 121
+		name = Disable
+		data = - 
+		ActionData = no
+	}
+	TYPE
+	{
+		ident = 122
+		name = Toggle
+		data = - 
+		ActionData = no
+	}
+}

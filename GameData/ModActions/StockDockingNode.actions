@@ -1,0 +1,15 @@
+﻿name = ModActionsList
+assemblyname = Stock
+pmname = ModuleDockingNode
+modname = Stock Dock Port
+ACTION
+{
+	name = Control Here
+	TYPE
+	{
+		ident = 8
+		name = Ctrl Here
+		data = 0 
+		ActionData = no
+	}
+}

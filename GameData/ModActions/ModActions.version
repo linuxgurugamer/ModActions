@@ -1,0 +1,20 @@
+{
+  "NAME": "ModActions",
+  "URL": "http://ksp.spacetux.net/avc/ScienceAlert",
+  "DOWNLOAD": "https://spacedock.info/mod/1886/ModActions",
+  "GITHUB": {
+    "USERNAME": "linuxgurugamer",
+    "REPOSITORY": "ModActions"
+  },
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 7,
+    "PATCH": 0,
+    "BUILD": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  }
+}
